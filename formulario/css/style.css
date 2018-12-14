@@ -1,0 +1,550 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+
+body{
+	font-family: Arial, sans-serif;
+	font-size: 90%;
+	background: url(../Imagenes/firma.jpg)no-repeat center top;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-attachment:fixed;
+}
+/*ESTILO DE FONDO DE FORMULARIO*/
+.bg-agile {
+    width: 50%;
+	  border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    padding: 3em 3em 3.5em;
+    background: rgba(79, 60, 37, 0.51);
+}
+h1 {
+    font-size: 54px;
+    font-weight: 100!important;
+    text-transform: capitalize;
+    color: #fff;
+    word-spacing: 11px;
+    letter-spacing: 5px;
+    margin: 2.5em 0 1.5em;
+    text-align: center;
+}
+h1 span {
+    color: #ea2e3e!important;
+    border: 7px solid rgba(157, 204, 135);
+    padding: 0 7px 0 12px;
+}
+.book-appointment h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.book-form input[type="text"], .book-form input[type="email"], select#country, select#country1, input#datepicker {
+    width: 86.8%!important;
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    padding: 10px 10px 10px 50px;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border: 1px solid rgba(20, 9, 9, 0.47);
+	  font-family: 'Arial', sans-serif;
+	  margin-left: 200px;
+}
+.phone_email, .span1_of_1 {
+    width: 79%;
+    float: left;
+}
+.phone_email1 {
+	  margin-bottom: 1.5em;
+	  width: 49%;
+    float: left;
+}
+select#country,select#country1{
+    width: 100%!important;
+}
+select#country option, select#country1 option {
+	background:#000;
+}
+.book-form .form-text,.book_date,.section_room {
+    position: relative;
+}
+.book-form i {
+    position: absolute;
+    color: #F9F8F5;
+    font-size: 14px;
+    top: 7px;
+    left: 0px;
+    width: 34px;
+    line-height: 25px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.47);
+    margin-left: 195px;
+}
+/*BOTON ESTILO ///////////////////////////*/
+.book-form input[type="Submit"] {
+    text-transform: capitalize;
+    background: rgba(1, 6, 17, 1);
+    color: #ffffff;
+	  border-radius: 10px;
+    border: none;
+    border: 1px solid #110b0c;
+    font-weight: bold;
+    float: right;
+    outline: none;
+    letter-spacing: 5px;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 175px;
+    padding-right: 38px;
+    padding-left: 38px;
+    padding-top: 9.45px;
+    padding-bottom: 9.83px;
+    text-align: center;
+}
+.book-form input[type="Submit"]:hover {
+    background: #f71313;
+    border-color: #f71313;
+    color: #fff;
+}
+.book-form ::-webkit-input-placeholder {
+	color:#fff !important;
+}
+.book-form :-moz-placeholder {
+	color:#fff !important;
+}
+.book-form ::-moz-placeholder {
+	color:#fff !important;
+}
+.book-form :-ms-input-placeholder {
+	color:#fff !important;
+}
+.book-form .form-text,.book_date,.section_room {
+    position: relative;
+}
+.book-form i {
+    position: absolute;
+    color: #F9F8F5;
+    font-size: 19px;
+    top: 7px;
+    left: 0px;
+    width: 35px;
+    line-height: 25px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.47);
+}
+/*BOTON ESTILO ///////////////////////////*/
+.book-form input[type="submit1"] {
+    text-transform: capitalize;
+    background: rgba(1, 6, 17, 1);
+    color: #ffffff;
+	  border-radius: 10px;
+    border: none;
+    border: 1px solid #110b0c;
+		font-weight: bold;
+    outline: none;
+    letter-spacing: 5px;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-top: 25px;
+    margin-right: 175px;
+    padding-top: 9.45px;
+    padding-bottom: 9.83px;
+    text-align: center;
+}
+.book-form input[type="submit1"]:hover {
+    background: #f71313;
+    border-color: #f71313;
+    color: #fff;
+}
+.agile-reservation-grid {
+    background: #f4f4f4;
+    padding: 2em;
+}
+.book-form {
+       margin: 0em 0;
+	   width:100%
+}
+
+.copy.w3ls {
+    margin: 8em 0em;
+    text-align: center;
+}
+.copy p {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.copy p a {
+    color: #ffffff;
+    text-decoration: underline;
+	  transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+.copy p a:hover {
+    color: #ea2e3e;
+}
+
+@media(max-width:1680px){
+	.book-form input[type="text"], .book-form input[type="email"],input#datepicker {
+		width: 85%!important;
+	}
+	.copy.w3ls {
+		margin: 5em 0em;
+	}
+}
+@media(max-width:1600px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 84.2%!important;
+		margin-left: 200px;
+	}
+	h1 {
+		margin: 1.3em 0 1em;
+	}
+	.copy.w3ls {
+		margin: 2.54em 0em;
+	}
+}
+@media(max-width:1440px){
+	.bg-agile {
+		width: 60%;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 85.4%!important;
+	}
+}
+@media(max-width:1366px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 84.3%!important;
+	}
+}
+@media(max-width:1280px){
+	.bg-agile {
+		width: 65%;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 84.8%!important;
+	}
+	.book-form input[type="submit"] {
+		margin-top: 1em;
+	}
+}
+@media(max-width:1080px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 83.5%!important;
+	}
+	.bg-agile {
+		width: 73%;
+		padding: 2em 3em 2.5em;
+	}
+}
+@media(max-width:1050px){
+	.bg-agile {
+		width: 76%;
+		padding: 2em 2.5em 2.5em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 84%!important;
+	}
+	h1 {
+		font-size: 50px;
+	}
+}
+@media(max-width:1024px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 84.5%!important;
+	}
+	.book-appointment h2 {
+		font-size: 27px;
+		margin-bottom: 0.8em;
+	}
+	.bg-agile {
+		width: 75%;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 83.5%!important;
+	}
+}
+@media(max-width:991px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 82.5%!important;
+	}
+	.book-appointment h2 {
+		font-size: 25px;
+		letter-spacing: 6px;
+	}
+	h1 {
+		font-size: 45px;
+	}
+	h1 span {
+		padding: 0 4px 0 9px;
+	}
+}
+@media(max-width:900px){
+	.book-form input[type="submit"] {
+		padding: 0.6em 0em;
+		font-size: 1em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 82%!important;
+	}
+	.bg-agile {
+		width: 80%;
+	}
+	h1 {
+		word-spacing: 5px;
+	}
+	.phone_email, .span1_of_1 {
+		margin-bottom: 1.2em;
+	}
+}
+@media(max-width:800px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 79.8%!important;
+	}
+	.book-appointment h2 {
+		font-size: 25px;
+	}
+	h1 {
+		font-size: 45px;
+	}
+	.copy p {
+		letter-spacing: 1.5px;
+	}
+	.copy.w3ls {
+		margin: 2.5em 0em;
+	}
+	h1 {
+		word-spacing: 0px;
+	}
+}
+@media(max-width:768px){
+	h1 {
+		margin: 3em 0 1.5em;
+	}
+	.copy.w3ls {
+		margin: 4.5em 0em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 79.5%!important;
+	}
+}
+@media(max-width:767px){
+	h1 {
+		margin: 1.3em 0 1em;
+	}
+	.copy.w3ls {
+		margin: 2.5em 0em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 79%!important;
+	}
+}
+@media(max-width:736px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 78%!important;
+	}
+	.copy p {
+		letter-spacing: 1.2px;
+		word-spacing: 1px;
+	}
+	h1 {
+		font-size: 43px;
+		letter-spacing: 4px;
+	}
+}
+@media(max-width:667px){
+	h1 {
+		font-size: 36px;
+	}
+	.book-appointment h2 {
+		letter-spacing: 2.5px;
+	}
+	.copy p {
+		font-size: 13.5px;
+		letter-spacing: 1.7px;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 76.9%!important;
+	}
+	.book-form input[type="submit"] {
+		font-size: 15.4px;
+		letter-spacing: 5px;
+	}
+	.bg-agile {
+		width: 85%;
+		padding: 1.5em 2em 2em;
+	}
+	.phone_email, .span1_of_1 {
+		margin-bottom: 1em;
+	}
+	.copy.w3ls {
+		margin: 2.1em 0em;
+	}
+}
+@media(max-width:640px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 87.7%!important;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], select#country, select#country1, input#datepicker {
+		font-size: 13.5px;
+	}
+	.copy.w3ls {
+		margin: 1.5em 2em;
+	}
+	.copy p {
+		line-height: 28px;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 76%!important;
+	}
+}
+@media(max-width:600px){
+	.book-appointment h2 {
+		font-size: 23px;
+	}
+	h1 {
+		font-size: 42px;
+		letter-spacing: 3px;
+		line-height: 1.7em;
+		margin: 0.7em 1em 0.5em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 74.7%!important;
+	}
+	h1 span {
+		padding: 0 3px 0 5px;
+		line-height: 45px;
+		display: inline-block;
+	}
+	.book-form input[type="submit"] {
+    width: 35%;
+}
+}
+@media(max-width:568px){
+	h1 {
+		font-size: 40px;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 73.7%!important;
+	}
+}
+@media(max-width:480px){
+	h1 {
+		font-size: 37px;
+		line-height: 68px;
+		margin: 0.9em 0em 0.5em;
+	}
+	.bg-agile {
+		width: 78%;
+		padding: 1.5em 2em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 82.9%!important;
+	}
+	.phone_email, .span1_of_1 {
+		width: 100%;
+		float: none;
+	}
+}
+@media(max-width:440px){
+	h1 {
+		font-size: 33px;
+	}
+	.book-appointment h2 {
+		letter-spacing: 1.4px;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 81%!important;
+	}
+	.book-form input[type="submit"] {
+    width: 50%;
+}
+}
+@media(max-width:414px){
+	h1 {
+		letter-spacing: 2px;
+	}
+	.book-appointment h2 {
+		font-size: 21px;
+	}
+	.bg-agile {
+		width: 80%;
+		padding: 1.5em 1.5em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 80.3%!important;
+	}
+	.copy.w3ls {
+		margin: 1.5em 1em;
+	}
+}
+@media(max-width:384px){
+	h1 {
+		font-size: 37px;
+		letter-spacing: 3px;
+		line-height: 64px;
+		margin: 0.7em 0em 0.5em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 78.9%!important;
+	}
+}
+@media(max-width:375px){
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 78.3%!important;
+	}
+}
+@media(max-width:320px){
+	h1 {
+		font-size: 35px;
+		letter-spacing: 1px;
+		line-height: 61px;
+		margin: 0.6em 0em 0.4em;
+	}
+	.book-form input[type="text"], .book-form input[type="email"], input#datepicker {
+		width: 74.5%!important;
+	}
+	.book-form input[type="submit"] {
+    width: 62%;
+}
+.copy p {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+}
