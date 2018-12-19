@@ -25,12 +25,12 @@
 </head>
 <body>
 	<h1>Contrato de licencia</h1>
+    <form method="POST" action="insertar.php">
    	<div class="bg-agile">
 		<div class="book-appointment">
-		<h2>Datos</h2>
+		<h2>Ingrese sus datos <a href="../pagina_principal/index.php"><img src="Imagenes/regresar.png" width="85" height="65"></a> </h2>
+
 			<div class="book-form agileits-login">
-                
-	   			<form method="POST" action="insertar.php">
             		<div class="agileits_reservation_grid">
 		           	 	
                         <div class="phone_email1">
@@ -38,45 +38,38 @@
                             <div class="form-text">
 		                    	<i class="fas fa-address-card" aria-hidden="true"></i>
 		                    	<input type="text" name="nombre" placeholder="Cliente/Empresa" required="">
-				            </div>
-						  
-						    <div class="phone_email">
-								<div class="form-text">
-								    <i class="fas fa-envelope-square" aria-hidden="true"></i>
-								    <input type="text" name="email" placeholder="Email" required=""><p>
-								</div>
-							</div>
-                        
-							<div class="phone_email1">
-				                <div class="book_date">
-				                    <i class="fa fa-calendar" aria-hidden="true"></i>
-				                        <input  id="datepicker" name="fecha" type="date" placeholder="Fecha"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}">
+
+                                <div class="form-text">
+                                    <i class="fas fa-envelope-square" aria-hidden="true"></i>
+                                    <input type="text" name="email" placeholder="Email" required=""><p>
+                                </div>
+
+                                <div class="book_date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <input  id="datepicker" name="fecha" type="date" placeholder="Fecha"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}">
                                     <p>
                                 </div>
-						    </div>
-                            
+
+                                <div class="form-text">
+                                    <i class="fas fa-address-card" aria-hidden="true"></i>
+                                    <select id="country" name="licencia" onchange="change_country(this.value)" class="frm-field required" style="Text-align:center;">
+                                        <option value="">Tipo de licencia</option>
+                                        <option value="Licencia_Standar">Licencia Standart</option>
+                                        <option value="Licencia_Full">Licencia Full </option>
+                                        <option value="Licencia_Premium">Licencia Premium</option>
+                                    </select>
+                                </div>
+				            </div>
 						<div class="phone_email"></div>
-                            
-			         	<div class="phone_email1">
-							<div class="form-text">
-								<i class="fas fa-address-card" aria-hidden="true"></i>
-								<select id="country" name="licencia" onchange="change_country(this.value)" class="frm-field required" style="Text-align:center;">
-									<option value="">Tipo de licencia</option>
-									<option value="Licencia_Standar">Licencia Standart</option>
-									<option value="Licencia_Full">Licencia Full </option>
-									<option value="Licencia_Premium">Licencia Premium</option>
-			     				</select>
-			      			</div>
+			         	<div class="phone_email1"></div>
                         </div>
-                        <input type="submit" name="contratar" value="Contratar">
-					 	</div>
                         <div class="clear"></div>
+                        <input type="submit" name="contratar" value="Contratar">
                         <div class="clear"></div>
 					</div>
-				</form>
-                
 			</div>
 		</div>
     </div>
+    </form>
 </body>
 </html>
