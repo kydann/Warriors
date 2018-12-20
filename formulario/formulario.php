@@ -28,7 +28,7 @@
     <form method="POST" action="insertar.php">
    	<div class="bg-agile">
 		<div class="book-appointment">
-		<h2>Ingrese sus datos <a href="../pagina_principal/index.php"><img src="Imagenes/regresar.png" width="85" height="65"></a> </h2>
+		<h2>Ingrese sus datos <a href="../pagina_principal/index.php"><img src="Imagenes/f1.png" width="25" height="25"></a> </h2>
 
 			<div class="book-form agileits-login">
             		<div class="agileits_reservation_grid">

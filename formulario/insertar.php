@@ -1,7 +1,7 @@
 <?php
     // Datos de la base de datos
 	$usuario = "root";
-	$password = "kydann2135";
+	$password = "";
 	$servidor = "localhost";
 	$basededatos = "Baselicencias1";
 	// creación de la conexión a la base de datos con mysql_connect()
@@ -14,17 +14,14 @@
     $fecha =$_POST["fecha"];
     $licencia =$_POST["licencia"];
 
-	$consultaCl = "SELECT * FROM clientes";
-    $consultaLi = "SELECT * FROM licencias";
+	$consultaCl = mysqli_query($conexion,"SELECT MAX(idcliente) FROM clientes");
+    $consultaLi = mysqli_query($conexion,"SELECT MAX(idlicencia) FROM licencias");
 
     $insertClient = "INSERT INTO clientes (nombre, email) VALUES ('$nombre', '$email')";
 
-    while($clientes = mysqli_fetch_array($consultaCl)) {
-        $id = $clientes['idcliente'];
-        $insertLicence = "INSERT INTO licencias (idcliente,nombre,fecha_de_inicio) values ('$id','$licencia','$fecha')";
-    }
-	// establecer y realizar consulta. guardamos en variable.
-	$resultado = mysqli_query( $conexion, $consultaCl ) or die ( "Algo ha ido mal en la consulta a la base de datos");
+    $valor = $valor+$consultaCl;
+
+    $insertLicence = "INSERT INTO licencias(idcliente,nombre,fecha_de_inicio,fecha_final) VALUES('$valor','$licencia','$fecha','$fecha')";
 
 	//Insersiones a BD
     $var = mysqli_query($conexion, $insertClient) or die ( "Algo ha ido mal en la consulta a la base de datos");
@@ -32,5 +29,6 @@
 
 	// cerrar conexión de base de datos
 	mysqli_close( $conexion );
+	echo "Exito";
 	header("location: formulario.php");
 ?>
