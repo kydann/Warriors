@@ -2,7 +2,7 @@
 // Ejemplo de conexión a base de datos MySQL con PHP.
 // Datos de la base de datos
 $usuario = "root";
-$password = "kydann2135";
+$password = "";
 $servidor = "localhost";
 $basededatos = "licencias";
 

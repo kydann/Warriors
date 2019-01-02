@@ -15,7 +15,7 @@ fwrite($archivo, $contenido . PHP_EOL);
 
 fclose($archivo);
 
-header('Location: ../pagina_principal/index.php');
+header('Location: ../pagina_oficial/index.php');
 
 $arr = array('empresa' => $empresa, 'licencia' => $tipoLicencia);
 

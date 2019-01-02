@@ -74,7 +74,7 @@
 
 <?php
 $usuario = "root";
-$password = "kydann2135";
+$password = "";
 $servidor = "localhost";
 $basededatos = "licencias";
 $conexion = mysqli_connect($servidor, $usuario, $password) or die ("No se ha podido conectar al servidor de Base de datos");
