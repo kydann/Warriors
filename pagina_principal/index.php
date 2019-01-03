@@ -14,7 +14,7 @@
 					<div id="logo"><img src="img/logo2.png" alt="" width="195" height="100"></div>
  				    <div id="menu-lista">
 						<ul>
-							<li><a href="../status/status.php">Conoce tu status&nbsp;&nbsp;&nbsp;</a></li>
+							<!---<li><a href="../status/status.php">Conoce tu status&nbsp;&nbsp;&nbsp;</a></li>-->
 							<li><a href="../formulario/formulario.php">Contratar licencia&nbsp;&nbsp;&nbsp;</a></li>
 							<li><a href="#footer">Contacto</a></li>
 						</ul>
